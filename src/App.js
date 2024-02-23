@@ -24,7 +24,7 @@ function AddUpdateForm() {
     console.log(`Sending data...`); // Log before the request
 
     try {
-      const response = await axios.post('/api/add', { text: inputValue });
+      const response = await axios.post('https://taskback-hx4h.onrender.com/api/add', { text: inputValue });
 
       if (!response.ok) {
         console.error('Error:', response.status, response.data);
@@ -49,7 +49,7 @@ function AddUpdateForm() {
     console.log(`Sending data...`); // Log before the request
 
     try {
-      const response = await axios.patch('/api/update', { text: inputValue });
+      const response = await axios.patch('https://taskback-hx4h.onrender.com/api/update', { text: inputValue });
 
       if (!response.ok) {
         console.error('Error:', response.status, response.data);
